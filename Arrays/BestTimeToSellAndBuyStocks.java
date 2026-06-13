@@ -1,5 +1,3 @@
-package arrays;
-
 public class BestTimeToSellAndBuyStocks {
     public static int maxprofit(int[] prices){ 
         int minimumPrice = prices[0];
