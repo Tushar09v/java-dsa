@@ -1,5 +1,10 @@
-class Solution {
 
+import java.util.ArrayList;
+import java.util.List;
+
+
+class EncodeAndDecodeString {
+    //Encoding
     public String encode(List<String> strs) {
         
         StringBuilder sb = new StringBuilder();
@@ -12,7 +17,7 @@ class Solution {
 
         
     }
-
+    //Decoding
     public List<String> decode(String str) {
 
         List<String> res = new ArrayList<>();
@@ -30,5 +35,11 @@ class Solution {
         i = end;
         }
         return res;
+    }
+
+    public static void main(String[] args) {
+        EncodeAndDecodeString codec = new EncodeAndDecodeString();
+        List<String> input = List.of("hello", "world");
+        System.out.println(codec.decode(codec.encode(input)));
     }
 }
